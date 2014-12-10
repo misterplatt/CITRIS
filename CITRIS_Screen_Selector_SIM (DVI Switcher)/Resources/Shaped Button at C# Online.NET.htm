@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0041)http://en.csharp-online.net/Shaped_Button -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="verify-v1" content="qLIlUXv7S0L6yiAxLJpOJiD7QYp2mFrujAKdor8rOiI=">
+        
+		<meta name="mobility" content="false">
+		<meta name="mobile-referrer" content="">
+		<meta name="keywords" content="Shaped Button,MSDN,c sharp,csharp,c-sharp,Create a composite Windows Forms control,Create a custom Windows Forms control by inheriting from the control class,Create an extended control by inheriting from an existing Windows Forms control,Exam 70-526 Study Guide: Skill Set 1,Exam 70-526 Study Guide: Skill Set 2,Exam 70-526 Study Guide: Skill Set 3,Exam 70-526 Study Guide: Skill Set 4,Exam 70-526 Study Guide: Skill Set 5,Exam 70-526 Study Guide: Skill Set 6,Exam 70-526 Study Guide: Skill Set 7,Microsoft Exam Preparation Guides">
+<link rel="shortcut icon" href="http://en.csharp-online.net/favicon.ico">
+<link rel="copyright" href="http://en.csharp-online.net/About_our_site:_C">
+				<title>Shaped Button at C# Online.NET</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/skins/csobook/main.css?7"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="./Shaped Button at C# Online.NET_files/commonPrint.css">
+		<link type="canonical" href="./Shaped Button at C# Online.NET_files/Shaped Button at C# Online.NET.htm">
+		<script src="./Shaped Button at C# Online.NET_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Shaped Button at C# Online.NET_files/ga.js"></script><script type="text/javascript">var skin = 'csobook';var stylepath = '/skins';</script>
+		<script type="text/javascript" src="./Shaped Button at C# Online.NET_files/wikibits.js"><!-- wikibits js --></script><link rel="stylesheet" type="text/css" href="./Shaped Button at C# Online.NET_files/KHTMLFixes.css">
+		<script type="text/javascript" src="./Shaped Button at C# Online.NET_files/index.php"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "/index.php?title=MediaWiki:Common.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/index.php?title=MediaWiki:Csobook.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/index.php?title=-&action=raw&gen=css&maxage=18000";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+				<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-253155-6']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./Shaped Button at C# Online.NET_files/translateelement.css"><script type="text/javascript" charset="UTF-8" src="./Shaped Button at C# Online.NET_files/main.js"></script><script type="text/javascript" charset="UTF-8" src="./Shaped Button at C# Online.NET_files/element_main.js"></script><style type="text/css"></style></head>
+<body class="ns-0 ltr" style="position: relative; min-height: 100%; top: 0px;">
+	<!-- Remove tabs for anonymous users -->
+			<style type="text/css">
+	    #ca-history { display: none !important; }
+	    #ca-talk { display: none !important; }
+	    #ca-viewsource { display: none !important; }
+	    </style> 
+		<div id="globalWrapper">
+	<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Shaped Button</h1>
+		<div id="bodyContent">
+
+		<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-9095722307447682";
+			/* enCSOMenuTagline728x15UC */
+			google_ad_slot = "5244329507";
+			google_ad_width = 728;
+			google_ad_height = 15;
+		//-->
+		</script>
+		<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
+		<!-- h3 id="siteSub">Microsoft .NET Framework, ADO.NET, ASP.NET, SQL Server, Visual C#, Visual Studio Developer Training</h3 -->
+		<div id="contentSub"></div>
+
+<div align="center"><table bgcolor="#554a1c" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">
+	<script type="text/javascript"><!--
+	google_ad_client = "ca-pub-9095722307447682";
+	/* CSO728x90U */
+	google_ad_slot = "1607019321";
+	google_ad_width = 728;
+	google_ad_height = 90;
+	//-->
+	</script>
+	<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</td></tr></tbody></table></div><br>
+									<div id="jump-to-nav">Jump to: <a href="http://en.csharp-online.net/Shaped_Button#column-one">navigation</a>, <a href="http://en.csharp-online.net/Shaped_Button#searchInput">search</a></div>			<!-- start content -->
+			<table id="Exam_70-526" style="margin: 0 0 1em 1em; font-size:90%; border: 1px solid gray; float:right; clear:right;" width="150">
+
+<tbody><tr style="background:#FFCC99" align="center">
+<td style="border-bottom: 2px solid #ccf"> <b><a href="http://en.csharp-online.net/Microsoft_Exam_Preparation_Guides" title="Microsoft Exam Preparation Guides">Exam Prep. Guides</a></b>
+</td></tr>
+<tr style="background:#F2F2F2" align="center">
+<td style="border-bottom: 2px solid #ccf"> <b><a href="http://en.csharp-online.net/Preparation_Guide_for_Exam_70-505" title="Preparation Guide for Exam 70-505">70-505 Study&nbsp;Guide</a><br><a href="http://en.csharp-online.net/Preparation_Guide_for_Exam_70-526" title="Preparation Guide for Exam 70-526">70-526 Study&nbsp;Guide</a></b>
+</td></tr>
+
+<tr style="background:#F2F2F2">
+<td style="border-bottom: 2px solid #ccf">
+<p><a href="http://en.csharp-online.net/Exam_70-526_Study_Guide:_Skill_Set_1" title="Exam 70-526 Study Guide: Skill Set 1">1. Use Forms Controls</a><br>
+<a href="http://en.csharp-online.net/Exam_70-526_Study_Guide:_Skill_Set_2" title="Exam 70-526 Study Guide: Skill Set 2">2. Integrating Data</a><br>
+<a href="http://en.csharp-online.net/Exam_70-526_Study_Guide:_Skill_Set_3" title="Exam 70-526 Study Guide: Skill Set 3">3. Printing/Reporting</a><br>
+<a href="http://en.csharp-online.net/Exam_70-526_Study_Guide:_Skill_Set_4" title="Exam 70-526 Study Guide: Skill Set 4">4. Enhancing Usability</a><br>
+<a href="http://en.csharp-online.net/Exam_70-526_Study_Guide:_Skill_Set_5" title="Exam 70-526 Study Guide: Skill Set 5">5. Asynchronous Prog.</a><br>
+<a href="http://en.csharp-online.net/Exam_70-526_Study_Guide:_Skill_Set_6" title="Exam 70-526 Study Guide: Skill Set 6">6. Create Forms Controls</a>
+</p>
+<ul><li><a href="http://en.csharp-online.net/Create_a_composite_Windows_Forms_control" title="Create a composite Windows Forms control">Composite control</a>
+</li><li><a href="http://en.csharp-online.net/Create_a_custom_Windows_Forms_control_by_inheriting_from_the_control_class" title="Create a custom Windows Forms control by inheriting from the control class">Create custom control</a>
+</li><li><a href="http://en.csharp-online.net/Create_an_extended_control_by_inheriting_from_an_existing_Windows_Forms_control" title="Create an extended control by inheriting from an existing Windows Forms control">Inherit a control</a>
+<ul><li><a href="http://en.csharp-online.net/index.php?title=Create_an_extended_control_by_inheriting_from_an_existing_Windows_Forms_control_2&action=edit" class="new" title="Create an extended control by inheriting from an existing Windows Forms control 2">Create extended control</a>
+</li><li><strong>Create a shaped button</strong>
+</li></ul>
+</li></ul>
+<p><a href="http://en.csharp-online.net/Exam_70-526_Study_Guide:_Skill_Set_7" title="Exam 70-526 Study Guide: Skill Set 7">7. Configure/Deploy</a>
+</p>
+</td></tr>
+<tr align="right" style="background:#f2f2f2">
+<td><small><a href="http://en.csharp-online.net/Template:Exam_70-526_Study_Guide_Skill_Set_6-3&action=edit" class="external text" title="http://en.csharp-online.net/Template:Exam_70-526_Study_Guide_Skill_Set_6-3&amp;action=edit" rel="nofollow">edit</a></small>
+</td></tr></tbody></table>
+<p>Although this is not part of the exam, this section shows what can be achieved by extending the <code>Button</code> class. The following image displays an application that has four shaped buttons within it.
+</p><p><a href="http://en.csharp-online.net/Image:simon_game.jpg" class="image" title="Image:simon_game.jpg"><img src="./Shaped Button at C# Online.NET_files/simon_game.jpg" alt="Image:simon_game.jpg" width="332" height="332" longdesc="/Image:simon_game.jpg"></a>
+</p><p><br>
+To demonstrate how this was achieved, follow the steps below:
+</p><p><br>
+</p><ol>
+<p></p>
+<li>Add a new <code>UserControl</code> to your application.<br><br></li>
+<li>View the code and change the inherited type from <code>UserControl</code> to <code>Button</code>.
+<pre class="csharp"><span style="color: #0600FF;">public</span> partial <span style="color: #0600FF;">class</span> simonButton&nbsp;: Button
+<span style="color: #000000;">{</span>
+  <span style="color: #0600FF;">public</span> simonButton<span style="color: #000000;">(</span><span style="color: #000000;">)</span>
+  <span style="color: #000000;">{</span>
+    InitializeComponent<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;
+  <span style="color: #000000;">}</span>
+<span style="color: #000000;">}</span></pre></li>
+<li>The shape of the button is achieved through the use of two <code>GraphicsPath</code> objects. Declare these in the top of the button class.
+<pre class="csharp"><span style="color: #0600FF;">public</span> partial <span style="color: #0600FF;">class</span> simonButton&nbsp;: Button
+<span style="color: #000000;">{</span>
+  <span style="color: #0600FF;">private</span> GraphicsPath path;
+  <span style="color: #0600FF;">private</span> GraphicsPath innerPath;
+&nbsp;
+  ...</pre>
+The <code>path</code> denotes the outline of the button, while the <code>innerPath</code> denotes the shape of the flat surface of the button.<br><br></li>
+<li>Now override the <code>OnPaint</code> method of the button, to take care of the drawing, so that is looks like the following code.
+<pre class="csharp"><span style="color: #0600FF;">protected</span> <span style="color: #0600FF;">override</span> <span style="color: #0600FF;">void</span> OnPaint<span style="color: #000000;">(</span>PaintEventArgs pevent<span style="color: #000000;">)</span>
+<span style="color: #000000;">{</span>
+  Graphics g = pevent.<span style="color: #000000;">Graphics</span>;
+  g.<span style="color: #000000;">SmoothingMode</span> = SmoothingMode.<span style="color: #000000;">AntiAlias</span>;
+<span style="color: #000000;">}</span></pre>
+So that we do not get jagged curves, set the <code>SmoothingMode</code> to <code>AntiAlias</code>.<br><br></li>
+<li>The <code>path</code> object is filled with a <code>LinearGradientBrush</code>. This is simple to achieve by supplying a rectangle and a new <code>LinearGradientBrush</code>.
+<pre class="csharp"><span style="color: #008080; font-style: italic;">// Create Rectangle To Limit brush area.</span>
+Rectangle rect = <span style="color: #0600FF;">new</span> Rectangle<span style="color: #000000;">(</span><span style="color: #FF0000;">0</span>, <span style="color: #FF0000;">0</span>, <span style="color: #FF0000;">150</span>, <span style="color: #FF0000;">150</span><span style="color: #000000;">)</span>;
+      
+LinearGradientBrush linearBrush =
+  <span style="color: #0600FF;">new</span> LinearGradientBrush<span style="color: #000000;">(</span>rect,
+  Color.<span style="color: #000000;">FromArgb</span><span style="color: #000000;">(</span><span style="color: #FF0000;">40</span>,<span style="color: #FF0000;">40</span>,<span style="color: #FF0000;">40</span><span style="color: #000000;">)</span>,
+  <span style="color: #0600FF;">this</span>.<span style="color: #000000;">ForeColor</span>,
+  <span style="color: #FF0000;">225</span><span style="color: #000000;">)</span>;</pre>
+<p>Next we instantiate the <code>path</code> object.
+</p>
+<pre class="csharp">path = <span style="color: #0600FF;">new</span> GraphicsPath<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;</pre>
+<p>Add items to the <code>path</code> object to create the required shape
+</p>
+<pre class="csharp">path.<span style="color: #000000;">AddArc</span><span style="color: #000000;">(</span><span style="color: #FF0000;">0</span>, <span style="color: #FF0000;">0</span>, <span style="color: #FF0000;">270</span>, <span style="color: #FF0000;">270</span>, <span style="color: #FF0000;">180</span>, <span style="color: #FF0000;">90</span><span style="color: #000000;">)</span>;
+path.<span style="color: #000000;">AddArc</span><span style="color: #000000;">(</span><span style="color: #FF0000;">120</span>, <span style="color: #FF0000;">0</span>, <span style="color: #FF0000;">30</span>, <span style="color: #FF0000;">30</span>, <span style="color: #FF0000;">270</span>, <span style="color: #FF0000;">90</span><span style="color: #000000;">)</span>;
+path.<span style="color: #000000;">AddLine</span><span style="color: #000000;">(</span><span style="color: #FF0000;">150</span>, <span style="color: #FF0000;">0</span>, <span style="color: #FF0000;">150</span>, <span style="color: #FF0000;">85</span><span style="color: #000000;">)</span>;
+path.<span style="color: #000000;">AddArc</span><span style="color: #000000;">(</span><span style="color: #FF0000;">100</span>, <span style="color: #FF0000;">100</span>, <span style="color: #FF0000;">100</span>, <span style="color: #FF0000;">100</span>, <span style="color: #FF0000;">-90</span>, <span style="color: #FF0000;">-90</span><span style="color: #000000;">)</span>;
+path.<span style="color: #000000;">AddLine</span><span style="color: #000000;">(</span><span style="color: #FF0000;">100</span>, <span style="color: #FF0000;">150</span>, <span style="color: #FF0000;">0</span>, <span style="color: #FF0000;">150</span><span style="color: #000000;">)</span>;
+path.<span style="color: #000000;">AddArc</span><span style="color: #000000;">(</span><span style="color: #FF0000;">0</span>, <span style="color: #FF0000;">120</span>, <span style="color: #FF0000;">30</span>, <span style="color: #FF0000;">30</span>, <span style="color: #FF0000;">90</span>, <span style="color: #FF0000;">90</span><span style="color: #000000;">)</span>;
+path.<span style="color: #000000;">AddArc</span><span style="color: #000000;">(</span><span style="color: #FF0000;">0</span>, <span style="color: #FF0000;">0</span>, <span style="color: #FF0000;">270</span>, <span style="color: #FF0000;">270</span>, <span style="color: #FF0000;">180</span>, <span style="color: #FF0000;">90</span><span style="color: #000000;">)</span>;</pre>
+<p>Fill the <code>path</code>
+</p>
+<pre class="csharp">g.<span style="color: #000000;">FillPath</span><span style="color: #000000;">(</span>linearBrush, path<span style="color: #000000;">)</span>;</pre>
+<p>Finally, dispose of the brush to free memory
+</p>
+<pre class="csharp">linearBrush.<span style="color: #000000;">Dispose</span><span style="color: #000000;">(</span><span style="color: #000000;">)</span>;</pre></li>
+<li>The <code>innerPath</code> object is filled with a <code>SolidBrush</code>.
+<pre class="csharp">Brush b = <span style="color: #0600FF;">new</span> SolidBrush<span style="color: #000000;">(</span><span style="color: #0600FF;">this</span>.<span style="color: #000000;">ForeColor</span><span style="color: #000000;">)</span>;</pre>
+<p>Next we instantiate the <code>innerPath</code> object.
+</p>
+<pre class="csharp">innerPath = <span style="color: #0600FF;">new</span> GraphicsPath<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;</pre>
+<p>Add items to the <code>innerPath</code> object to create the required shape
+</p>
+<pre class="csharp">innerPath.<span style="color: #000000;">AddArc</span><span style="color: #000000;">(</span><span style="color: #FF0000;">10</span>, <span style="color: #FF0000;">10</span>, <span style="color: #FF0000;">250</span>, <span style="color: #FF0000;">250</span>, <span style="color: #FF0000;">180</span>, <span style="color: #FF0000;">90</span><span style="color: #000000;">)</span>;
+innerPath.<span style="color: #000000;">AddArc</span><span style="color: #000000;">(</span><span style="color: #FF0000;">130</span>, <span style="color: #FF0000;">10</span>, <span style="color: #FF0000;">10</span>, <span style="color: #FF0000;">10</span>, <span style="color: #FF0000;">270</span>, <span style="color: #FF0000;">90</span><span style="color: #000000;">)</span>;
+innerPath.<span style="color: #000000;">AddLine</span><span style="color: #000000;">(</span><span style="color: #FF0000;">140</span>, <span style="color: #FF0000;">0</span>, <span style="color: #FF0000;">140</span>, <span style="color: #FF0000;">90</span><span style="color: #000000;">)</span>;
+innerPath.<span style="color: #000000;">AddArc</span><span style="color: #000000;">(</span><span style="color: #FF0000;">90</span>, <span style="color: #FF0000;">90</span>, <span style="color: #FF0000;">100</span>, <span style="color: #FF0000;">100</span>, <span style="color: #FF0000;">-90</span>, <span style="color: #FF0000;">-90</span><span style="color: #000000;">)</span>;
+innerPath.<span style="color: #000000;">AddLine</span><span style="color: #000000;">(</span><span style="color: #FF0000;">90</span>, <span style="color: #FF0000;">140</span>, <span style="color: #FF0000;">10</span>, <span style="color: #FF0000;">140</span><span style="color: #000000;">)</span>;
+innerPath.<span style="color: #000000;">AddArc</span><span style="color: #000000;">(</span><span style="color: #FF0000;">10</span>, <span style="color: #FF0000;">130</span>, <span style="color: #FF0000;">10</span>, <span style="color: #FF0000;">10</span>, <span style="color: #FF0000;">90</span>, <span style="color: #FF0000;">90</span><span style="color: #000000;">)</span>;</pre>
+<p>Fill the <code>innerPath</code>
+</p>
+<pre class="csharp">g.<span style="color: #000000;">FillPath</span><span style="color: #000000;">(</span>b, innerPath<span style="color: #000000;">)</span>;</pre>
+<p>Finally, dispose of the brush to free memory
+</p>
+<pre class="csharp">b.<span style="color: #000000;">Dispose</span><span style="color: #000000;">(</span><span style="color: #000000;">)</span>;</pre></li>
+<li>So far, this draws our shaped button, but you can click anywhere in the associated rectangle, so to stop this, simply set the <code>Region</code> property of the button to <code>path</code>.
+<pre class="csharp"><span style="color: #0600FF;">this</span>.<span style="color: #000000;">Region</span> = <span style="color: #0600FF;">new</span> Region<span style="color: #000000;">(</span>path<span style="color: #000000;">)</span>;</pre>
+The button will now only accept clicks within the region of the shape.<br><br></li>
+<li>So that the user has some feedback that they are over a button, changing the cursor is a simple thing to do. Override the <code>OnMouseEnter</code> and <code>OnMouseLeave</code> methods and change the cursor within them:
+
+<pre class="csharp"><span style="color: #0600FF;">protected</span> <span style="color: #0600FF;">override</span> <span style="color: #0600FF;">void</span> OnMouseEnter<span style="color: #000000;">(</span><span style="color: #2B91AF;">EventArgs</span> e<span style="color: #000000;">)</span>
+<span style="color: #000000;">{</span>
+  <span style="color: #0600FF;">this</span>.<span style="color: #000000;">Cursor</span> = Cursors.<span style="color: #000000;">Hand</span>;
+  <span style="color: #0600FF;">base</span>.<span style="color: #000000;">OnMouseEnter</span><span style="color: #000000;">(</span>e<span style="color: #000000;">)</span>;
+<span style="color: #000000;">}</span>
+&nbsp;
+<span style="color: #0600FF;">protected</span> <span style="color: #0600FF;">override</span> <span style="color: #0600FF;">void</span> OnMouseLeave<span style="color: #000000;">(</span><span style="color: #2B91AF;">EventArgs</span> e<span style="color: #000000;">)</span>
+<span style="color: #000000;">{</span>
+  <span style="color: #0600FF;">this</span>.<span style="color: #000000;">Cursor</span> = Cursors.<span style="color: #000000;">Arrow</span>;
+  <span style="color: #0600FF;">base</span>.<span style="color: #000000;">OnMouseLeave</span><span style="color: #000000;">(</span>e<span style="color: #000000;">)</span>;
+<span style="color: #000000;">}</span></pre></li>
+<li>The button also needs visual feedback that it has been pressed. In this case, the button wants to appear as if a light has come on behind it. This requires several new items and some changes to the code. First off, a boolean value is required to store if the click has happened so that it can be drawn in the correct state.
+<pre class="csharp"><span style="color: #0600FF;">private</span> <span style="color: #0600FF;">bool</span> _clicked = <span style="color: #0600FF;">false</span>;
+<span style="color: #0600FF;">public</span> <span style="color: #0600FF;">bool</span> Clicked
+<span style="color: #000000;">{</span>
+  get <span style="color: #000000;">{</span> <span style="color: #0600FF;">return</span> _clicked; <span style="color: #000000;">}</span>
+  set
+  <span style="color: #000000;">{</span>
+    _clicked = value;
+    Invalidate<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;
+  <span style="color: #000000;">}</span>
+<span style="color: #000000;">}</span></pre>
+<p>Now override the <code>OnMouseDown</code> and <code>OnMouseUp</code> to set the <code>Clicked</code> state accordingly.
+</p>
+<pre class="csharp"><span style="color: #0600FF;">protected</span> <span style="color: #0600FF;">override</span> <span style="color: #0600FF;">void</span> OnMouseDown<span style="color: #000000;">(</span>MouseEventArgs mevent<span style="color: #000000;">)</span>
+<span style="color: #000000;">{</span>
+  _clicked = <span style="color: #0600FF;">true</span>;
+  <span style="color: #0600FF;">base</span>.<span style="color: #000000;">OnMouseDown</span><span style="color: #000000;">(</span>mevent<span style="color: #000000;">)</span>;
+<span style="color: #000000;">}</span>
+&nbsp;
+<span style="color: #0600FF;">protected</span> <span style="color: #0600FF;">override</span> <span style="color: #0600FF;">void</span> OnMouseUp<span style="color: #000000;">(</span>MouseEventArgs mevent<span style="color: #000000;">)</span>
+<span style="color: #000000;">{</span>
+  _clicked = <span style="color: #0600FF;">false</span>;
+  <span style="color: #0600FF;">base</span>.<span style="color: #000000;">OnMouseUp</span><span style="color: #000000;">(</span>mevent<span style="color: #000000;">)</span>;
+<span style="color: #000000;">}</span></pre>
+<p>Add a new brush.
+</p>
+<pre class="csharp">PathGradientBrush pgbrush = <span style="color: #0600FF;">new</span> PathGradientBrush<span style="color: #000000;">(</span>innerPath<span style="color: #000000;">)</span>;
+  pgbrush.<span style="color: #000000;">CenterPoint</span> = <span style="color: #0600FF;">new</span> <span style="color: #2B91AF;">Point</span><span style="color: #000000;">(</span><span style="color: #FF0000;">75</span>, <span style="color: #FF0000;">75</span><span style="color: #000000;">)</span>;
+  pgbrush.<span style="color: #000000;">CenterColor</span> = Color.<span style="color: #000000;">White</span>;
+  pgbrush.<span style="color: #000000;">SurroundColors</span> = <span style="color: #0600FF;">new</span> Color<span style="color: #000000;">[</span><span style="color: #000000;">]</span> <span style="color: #000000;">{</span> <span style="color: #0600FF;">this</span>.<span style="color: #000000;">ForeColor</span> <span style="color: #000000;">}</span>;</pre>
+<p>Redraw the button according to the <code>Clicked</code> state.
+</p>
+<pre class="csharp"><span style="color: #0600FF;">if</span> <span style="color: #000000;">(</span>_clicked == <span style="color: #0600FF;">false</span><span style="color: #000000;">)</span>
+<span style="color: #000000;">{</span>
+  g.<span style="color: #000000;">FillPath</span><span style="color: #000000;">(</span>linearBrush, path<span style="color: #000000;">)</span>;
+  g.<span style="color: #000000;">FillPath</span><span style="color: #000000;">(</span>b, innerPath<span style="color: #000000;">)</span>;
+<span style="color: #000000;">}</span>
+<span style="color: #0600FF;">else</span>
+<span style="color: #000000;">{</span>
+  g.<span style="color: #000000;">FillPath</span><span style="color: #000000;">(</span>linearBrush, path<span style="color: #000000;">)</span>;
+  g.<span style="color: #000000;">FillPath</span><span style="color: #000000;">(</span>pgbrush, innerPath<span style="color: #000000;">)</span>;
+<span style="color: #000000;">}</span></pre>
+Remember to dispose of the brush correctly.<br><br></li>
+<li>For a full code listing click <a href="http://en.csharp-online.net/Shaped_Button_Code" title="Shaped Button Code">here</a>.</li>
+<p></p></ol>
+<p></p>
+<!-- Saved in parser cache with key csharpon_cswiki:pcache:idhash:7635-0!1!0!0!!en!2 and timestamp 20120722081953 -->
+<div class="printfooter">
+Retrieved from "<a href="./Shaped Button at C# Online.NET_files/Shaped Button at C# Online.NET.htm">http://en.csharp-online.net/Shaped_Button</a>"</div>
+			<div id="catlinks"><p class="catlinks"><a href="http://en.csharp-online.net/index.php?title=Special:Categories&article=Shaped_Button" title="Special:Categories">Category</a>: <span dir="ltr"><a href="http://en.csharp-online.net/Category:Exam_70-526_Study_Guide:_Skill_Set_6" title="Category:Exam 70-526 Study Guide: Skill Set 6">Exam 70-526 Study Guide: Skill Set 6</a></span></p></div>			<!-- end content -->
+			<div class="visualClear"></div>
+
+<div class="visualClear"></div><br>
+
+<div align="center"><table bgcolor="#554a1c" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">
+	<script type="text/javascript"><!--
+	google_ad_client = "ca-pub-9095722307447682";
+	/* enCSOLeaderboard728x90LC */
+	google_ad_slot = "3705967276";
+	google_ad_width = 728;
+	google_ad_height = 90;
+	//-->
+	</script>
+	<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</td></tr></tbody></table></div>
+
+		</div>
+	</div>
+
+	<div id="column-google">
+	   <script type="text/javascript"><!--
+		google_ad_client = "ca-pub-9095722307447682";
+		/* enCSOSkyscraperR */
+		google_ad_slot = "7823309745";
+		google_ad_width = 160;
+		google_ad_height = 600;
+		//-->
+		</script>
+		<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+	</div>
+
+	</div><!-- end content column -->
+		
+<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+				 <li id="ca-nstab-main" class="selected"><a href="./Shaped Button at C# Online.NET_files/Shaped Button at C# Online.NET.htm">Article</a></li>
+				 <li id="ca-talk" class="new"><a href="http://en.csharp-online.net/index.php?title=Talk:Shaped_Button&action=edit">Discussion</a></li>
+				 <li id="ca-edit"><a href="http://en.csharp-online.net/index.php?title=Shaped_Button&action=edit">Edit</a></li>
+				 <li id="ca-history"><a href="http://en.csharp-online.net/index.php?title=Shaped_Button&action=history">History</a></li>
+				 <li id="ca-searchAction"><a href="http://en.csharp-online.net/CSharp_Online_Web_Search_Results?cx=015184517059031426848%3Amyxksvkpaf0&q=Shaped+Button&sa=Search+Web&cof=FORID%3A11#1064">search web</a></li>
+				 <li id="ca-shopAction"><a href="http://en.csharp-online.net/NET_Bazaar">shop</a></li>
+		</ul>
+	</div>
+	<!-- deleted login links -->
+	<!-- div class="portlet" id="p-logo" -->
+	<div id="p-logo">
+		<a style="background-image: url(/skins/common/images/CSOWin8Logo3.png);" href="http://en.csharp-online.net/Visual_CSharp_Developer_Center" title="Go to C# Online.NET Start page..."></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+
+	<div id="p-menuad1">
+		<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-9095722307447682";
+			/* enCSOAdLinkMenu160x90UL */
+			google_ad_slot = "7383275214";
+			google_ad_width = 160;
+			google_ad_height = 90;
+			//-->
+		</script>
+		<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+	</div>
+
+	<div class="portlet">
+	    <h5>Share this page</h5>
+	    <div id="p-share" class="pBody">
+	        <ul>
+	        <li><span title=""><a href="http://del.icio.us/post?tags=CSO&v=4&noui&jump=close&url=http://en.csharp-online.net/Shaped_Button&title=Shaped%20Button&notes=" target="offsite" rel="nofollow">del.icio.us</a><span></span></span></li>
+	        <li><span title=""><script type="text/javascript">function fbs_click() {u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&amp;t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}</script><a href="http://www.facebook.com/share.php?u=http://en.csharp-online.net/Shaped_Button" onclick="return fbs_click()" target="offsite" rel="nofollow" class="fb_share_link">Facebook</a><span></span></span></li>
+			<li><span title=""><a href="https://plus.google.com/share?url=http://en.csharp-online.net/Shaped_Button&title=Shaped%20Button" target="offsite" rel="nofollow">Google+</a><span></span></span></li>
+	        <li><span title=""><a href="http://www.stumbleupon.com/submit?url=http://en.csharp-online.net/Shaped_Button&title=Shaped%20Button" target="offsite" rel="nofollow">StumbleUpon</a><span></span></span></li>
+	        </ul>
+	      </div>
+	</div>
+
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search C# Online.NET</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="http://en.csharp-online.net/Special:Search" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="">
+				<input type="submit" name="go" class="searchButton" id="searchGoButton" value="Go">&nbsp;
+				<input type="submit" name="fulltext" class="searchButton" value="Search site">
+			</div></form>
+		</div>
+	</div>
+	
+		<!-- div class='portlet' id='p-Visual C# Developer Center' -->
+	<div class="portlet">
+		<h5>Visual C# Developer Center</h5>
+		<div id="p-start" class="pBody">
+			<ul>
+				<li id="n-Start"><a href="http://en.csharp-online.net/Visual_CSharp_Developer_Center">Start</a></li>
+				<li id="n-.NET-Framework"><a href="http://en.csharp-online.net/.NET_Framework_and_CLR">.NET Framework</a></li>
+				<li id="n-ASP.NET-and-C#"><a href="http://en.csharp-online.net/ASP.NET_Entry_Points">ASP.NET and C#</a></li>
+				<li id="n-Free-Microsoft-Software-Downloads"><a href="http://en.csharp-online.net/Free_Microsoft_Software_Downloads">Free Microsoft Software Downloads</a></li>
+				<li id="n-MSDN"><a href="http://en.csharp-online.net/MSDN_Microsoft_Developer_Network">MSDN</a></li>
+				<li id="n-Visual-C#-.NET"><a href="http://en.csharp-online.net/CSharp_and_Visual_CSharp_Development">Visual C# .NET</a></li>
+				<li id="n-Visual-C#-Blog"><a href="http://en.csharp-online.net/Official_CSharp_Site_Weblog">Visual C# Blog</a></li>
+				<li id="n-Visual-C#-Dictionary"><a href="http://en.csharp-online.net/Online_Dictionary_of_Visual_CSharp_NET_Programming">Visual C# Dictionary</a></li>
+				<li id="n-Visual-C#-FAQ"><a href="http://en.csharp-online.net/Visual_CSharp_FAQ">Visual C# FAQ</a></li>
+				<li id="n-Visual-C#-Links"><a href="http://en.csharp-online.net/Visual_CSharp_Links_and_Resources">Visual C# Links</a></li>
+				<li id="n-Visual-C#-Tutorials"><a href="http://en.csharp-online.net/Visual_CSharp_Tutorials">Visual C# Tutorials</a></li>
+				<li id="n-Visual-Studio-.NET"><a href="http://en.csharp-online.net/Visual_Studio">Visual Studio .NET</a></li>
+			</ul>
+		</div>
+	</div>
+	
+<div class="portlet">
+    <h5>C# Online.NET</h5>
+    <div id="p-site" class="pBody">
+         <ul>
+         <li><a href="http://en.csharp-online.net/About_our_site" rel="nofollow">About our site</a></li>
+         <li><a href="http://en.csharp-online.net/Help:Contents" rel="nofollow">Help</a></li>
+	<span title="Sorry, no new registrations.">
+	     	        <li><a href="http://en.csharp-online.net/Special:Userlogin" rel="nofollow">Login</a></li>
+	        <!-- <li><a href="/Special:Userlogin&type=signup" rel="nofollow">Create new account</a></li> -->
+		     </span>
+	     <li><a href="http://en.csharp-online.net/Special:Random" rel="nofollow">Random page</a></li>
+	     <li><a href="http://en.csharp-online.net/NET_Bazaar" rel="nofollow">Shop .NET Bazaar</a></li>
+		 <li><a href="http://en.csharp-online.net/Category:Site_Map" rel="nofollow">Site Map</a></li>
+		</ul>
+     			</div>
+     </div>
+     
+	<br>
+	<div id="p-menuad2"> 
+		<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-9095722307447682";
+			/* enCSOAdLinkMenu160x90LL */
+			google_ad_slot = "3078848659";
+			google_ad_width = 160;
+			google_ad_height = 90;
+			//-->
+		</script>
+		<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+	</div>
+
+  </div>
+
+</div><!-- end of left column -->
+
+<div class="visualClear"></div>
+<div id="footer">
+<div align="center"><br>
+<table cellpadding="0" cellspacing="0" border="0">
+  <tbody><tr bgcolor="#bc1d49">
+     <td colspan="4">
+     <div align="center"><script type="text/javascript"><!--
+amazon_ad_tag = "csharponline-20"; amazon_ad_width = "728"; amazon_ad_height = "90"; amazon_ad_logo = "hide"; amazon_ad_link_target = "offsite"; amazon_color_border = "00A11B"; amazon_color_background = "00A11B"; amazon_color_text = "FFFFFF"; amazon_color_link = "FFFFFF"; amazon_color_price = "FFFFFF"; amazon_color_logo = "FFFFFF";//--></script>
+<script type="text/javascript" src="http://www.assoc-amazon.com/s/ads.js"></script><br><br></div>
+     </td>
+  </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" border="0">
+  <tbody><tr bgcolor="#bc1d49">
+     <td>
+        <span title="(c) Copyright 2006-2012 C# Online.NET. Click for more info."><a style="color: #FFFFFF;" href="http://en.csharp-online.net/About_our_site" rel="nofollow">About&nbsp;<em>C#&nbsp;Online.NET</em></a>&nbsp;&nbsp;&nbsp;</span>
+     </td>
+     <td valign="middle"><div id="google_translate_element"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage" class="goog-te-gadget-simple" style="white-space: nowrap;"><img src="./Shaped Button at C# Online.NET_files/cleardot.gif" class="goog-te-gadget-icon" style="background-image: url(http://translate.googleapis.com/translate_static/img/te_ctrl3.gif); background-position: -65px 0px;"><span style="vertical-align: middle;"><a class="goog-te-menu-value" href="javascript:void(0)"><span>Select Language</span><img src="./Shaped Button at C# Online.NET_files/cleardot.gif" width="1" height="1"><span style="border-left-width: 1px; border-left-style: solid; border-left-color: rgb(187, 187, 187);">​</span><img src="./Shaped Button at C# Online.NET_files/cleardot.gif" width="1" height="1"><span style="color: rgb(155, 155, 155);">▼</span></a></span></div></div></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script><script src="./Shaped Button at C# Online.NET_files/element.js"></script>
+	 </td>
+     <td>&nbsp;&nbsp;&nbsp;<script type="text/javascript" src="./Shaped Button at C# Online.NET_files/plusone.js" gapi_processed="true"></script><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 38px; height: 24px; background-position: initial initial; background-repeat: initial initial;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 38px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1371856268347" name="I0_1371856268347" src="./Shaped Button at C# Online.NET_files/fastbutton.htm" allowtransparency="true" data-gapiattached="true" title="+1"></iframe></div></td>
+     <td>&nbsp;&nbsp;&nbsp;<a href="http://en.csharp-online.net/Shaped_Button#top" title="Go to top of page" rel="nofollow"><img src="./Shaped Button at C# Online.NET_files/upArrow16x16.gif" height="16" width="16" alt="Go to top of csharp tutorial page"></a></td>
+   </tr>
+</tbody></table></div>
+</div>
+	<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+
+<!-- Served by serv01.m12.siteground.biz in 0.22 secs. --><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./Shaped Button at C# Online.NET_files/translate-32.png" width="20" height="20"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+<iframe frameborder="0" class="goog-te-menu-frame skiptranslate" style="visibility: visible; box-sizing: content-box; width: 668px; height: 274px; display: none;"></iframe></body><!-- Cached 20120722081953 --></html>
